@@ -91,7 +91,7 @@ func run(config *providers.Config, domains []string) {
 	os.Exit(exitStatus)
 }
 
-func main() {
+func gau() {
 	var domains []string
 	verbose := flag.Bool("v", false, "enable verbose mode")
 	includeSubs := flag.Bool("subs", false, "include subdomains of target domain")
