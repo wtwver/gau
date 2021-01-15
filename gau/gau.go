@@ -19,7 +19,7 @@ import (
 	"github.com/lc/gau/providers"
 )
 
-func run(config *providers.Config, domains []string) {
+func Run(config *providers.Config, domains []string) {
 	var providerList []providers.Provider
 
 	for _, toUse := range config.Providers {
@@ -91,7 +91,7 @@ func run(config *providers.Config, domains []string) {
 	os.Exit(exitStatus)
 }
 
-func gau() {
+func Gau() {
 	var domains []string
 	verbose := flag.Bool("v", false, "enable verbose mode")
 	includeSubs := flag.Bool("subs", false, "include subdomains of target domain")
