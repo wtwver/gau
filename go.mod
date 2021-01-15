@@ -1,4 +1,4 @@
-module github.com/lc/gau
+module github.com/wtwver/gau
 
 go 1.14
 
